@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>간단한 로그인/로그아웃 예제</title>
+    <script src="/js/login.js"></script>
+</head>
+<body>
+    <h2>간단한 로그인/로그아웃 예제</h2>
+    <div id="loginForm">
+        <input type="text" id="username" placeholder="아이디"><br>
+        <input type="password" id="password" placeholder="비밀번호"><br>
+        <button onclick="login()">로그인</button>
+    </div>
+    <div id="logoutForm" style="display:none;">
+        <p><strong>로그인됨</strong></p>
+        <button onclick="logout()">로그아웃</button>
+    </div>
+
+</body>
+</html>
