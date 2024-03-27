@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100..900&family=Permanent+Marker&display=swap');
+
+/* main.css */
+.main {
+  padding-top: 300px; /* header의 높이만큼 메인 내용이 아래로 밀리도록 설정*/
+  margin-bottom: 100px; /*푸터와의 간격 조절하기 위해*/
+}
+
+.main .container {
+  width: 1140px;
+  margin: 0auto;
+}
+
+/* 옆으로 클릭하면 넘어가는 건 자바스크립트로 구현하는 부분 같아 우선 가로스크롤로 처리했습니다*/
+
+.main-top {
+  overflow-x: auto; /*가로 스크롤 추가*/
+  white-space: nowrap; /* 이미지 옆으로 넘어가도록 */
+}
+
+.main-top img {
+  width: 100%;
+  height: 500px;
+  margin-right: 10px;
+}
+
+.main-middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.main-middle input{
+  width: 318px;
+  height: 28px;
+  border:1px solid #ccc;
+}
+
+.main-middle .search-icon{
+  background-color: transparent;
+  border:1px solid #ccc;
+  font-size: 19px;
+}
+
+.main-bottom::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.main-bottom .main-inner {
+  width: 30%;
+  margin-right: 5%;
+  padding:1rem 1rem 1.5rem 1rem;
+  float:left;
+  background-color:#f8f8f8;
+  border:1px solid #ccc;
+  margin-bottom:3rem;
+  margin-top: 30px;
+}
+
+.main-bottom .main-inner:nth-child(3n) {
+  margin-right:0;
+}
+
+/* 이미지 크기가 부모 요소를 넘지 않도록 100%로 지정 */
+.main-bottom .main-inner img{
+  width:100%;
+  display:block;
+}
+
+.main-bottom .main-inner strng {
+  margin-top: 20px
+}
+
+.main-bottom .main-inner h3 {
+  margin-top: 10px
+}
+
+.main-bottom .main-inner .ellipsis {
+  word-break: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box; 
+  -webkit-line-clamp: 2; 
+  -webkit-box-orient: vertical;
+}

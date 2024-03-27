@@ -1,34 +1,174 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <title>Car Community</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
-    <header>
-        <h1>메인페이지 & 로고</h1>
-    </header>
-    <main>
-        <div>
-            <h2>main</h2>
-            차량명 : <input type="text" id="Create" placeholder="차량명을 입력"><br />
-            닉네임 : <input type="text" id="Create1" placeholder="닉네임"><br />
-            차종 : <input id="Create2" placeholder="차종" ><br />
-            <textarea id="Create_Text" cols="30" rows="10" placeholder="메시지를 입력하랏"></textarea><br>
-            <input type="file" id="image" accept="image/*" /><br />
-            <button id="Create-Button">Create</button>
-            <div id="Create-List">
+  <!-- header -->
+  <header>
+    <div class="container">
+      <button class="logo">Car Revolution</button>
+      <p>여기는 차 커뮤니티 헤더에 넣을 소개글 자리 입니다. </p>
+    </div>
+  </header>
+  <!-- end header -->
 
-            </div>
+  <!-- main -->
+  <section id="main" class="main">
+    <div class="container">
+
+      <div class="main-top">
+        <img src="../images/car1.jpg" alt="Image 1">
+        <img src="../images/car2.jpg" alt="Image 2">
+        <img src="../images/car3.jpg" alt="Image 3">
+      </div>
+
+      <div class="main-middle">
+        <div class="search">
+          <input type="text" name="q" placeholder=" 검색어를 입력하세요">
+          <button class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
-    </main><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <footer>
-        <h1>footer</h1>
-    </footer>
-    <script src="js/Create.js"></script>
+        <div class="registration-form">
+          <a href="html/detail.html"><button type="submit">등록</button></a>
+        </div>
+      </div>
+
+      <div class="main-bottom">
+        <div class="main-inner">
+          <div class="image">
+            <img src="images/example.jpg" alt="">
+          </div>
+          <div class="content">
+            <strong>차 이름</strong>
+            <h3 class="ellipsis">글 제목이 두줄이상 넘어가면 생략할 수 있도록</h3>
+          </div>
+        </div>
+        <div class="main-inner">
+          <div class="image">
+            <img src="images/car.jpg" alt="">
+          </div>
+          <div class="content">
+            <strong>차 이름</strong>
+            <h3 class="ellipsis">글 제목</h3>
+          </div>
+        </div>
+        <div class="main-inner">
+          <div class="image">
+            <img src="images/car.jpg" alt="">
+          </div>
+          <div class="content">
+            <strong>차 이름</strong>
+            <h3 class="ellipsis">글 제목</h3>
+          </div>
+        </div>
+        <div class="main-inner">
+          <div class="image">
+            <img src="images/car.jpg" alt="">
+          </div>
+          <div class="content">
+            <strong>차 이름</strong>
+            <h3 class="ellipsis">글 제목</h3>
+          </div>
+        </div>
+        <div class="main-inner">
+          <div class="image">
+            <img src="images/car.jpg" alt="">
+          </div>
+          <div class="content">
+            <strong>차 이름</strong>
+            <h3 class="ellipsis">글 제목</h3>
+          </div>
+        </div>
+        <div class="main-inner">
+          <div class="image">
+            <img src="images/car.jpg" alt="">
+          </div>
+          <div class="content">
+            <strong>차 이름</strong>
+            <h3 class="ellipsis">글 제목</h3>
+          </div>
+        </div>
+        <div class="main-inner">
+          <div class="image">
+            <img src="images/car.jpg" alt="">
+          </div>
+          <div class="content">
+            <strong>차 이름</strong>
+            <h3 class="ellipsis">글 제목</h3>
+          </div>
+        </div>
+        <div class="main-inner">
+          <div class="image">
+            <img src="images/car.jpg" alt="">
+          </div>
+          <div class="content">
+            <strong>차 이름</strong>
+            <h3 class="ellipsis">글 제목</h3>
+          </div>
+        </div>
+        <div class="main-inner">
+          <div class="image">
+            <img src="images/car.jpg" alt="">
+          </div>
+          <div class="content">
+            <strong>차 이름</strong>
+            <h3 class="ellipsis">글 제목</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end main -->
+  <!-- footer -->
+  <footer>
+    <div class="container">
+      <div class="social">
+        <a href="#">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-google-plus"></i>
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <button>Home</button>
+          </li>
+          <li>
+            <button>News</button>
+          </li>
+          <li>
+            <button>About</button>
+          </li>
+          <li>
+            <button>Contact Us</button>
+          </li>
+          <li>
+            <button>Our Team</button>
+          </li>
+        </ul>
+      </nav>
+      <p>Copyright ©2024 Designed by CarRevolution</p>
+    </div>
+  </footer>
+  <!-- end header -->
+  
 </body>
 
 </html>
