@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100..900&family=Permanent+Marker&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* read_post.css */
+.post-page {
+  padding-top: 300px; /* header의 높이만큼 메인 내용이 아래로 밀리도록 설정*/
+  margin-bottom: 100px; /*푸터와의 간격 조절하기 위해*/
+}
+
+.post-page .read-container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.read-container {
+  font-family: "Noto Sans Korean", sans-serif ;
+}
+
+.read-container .back-button {
+  font-size: 1.5rem;
+  color: #6B728E;
+  cursor: pointer;
+}
+
+.post-title {
+  text-align: center; 
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  margin: 30px 0;
+  color: #404258;
+}
+
+.post-middle {
+  width: 1140px;
+  height: 700px;
+  padding: 10px ;
+  border: 2px solid #DDE6ED;
+  display: flex;
+}
+
+.post-middle::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.post-middle .post-photo {
+  width: 50%;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
+}
+
+.post-middle .post-photo img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.post-middle .post-content {
+  width: 50%;
+  float: left;
+  padding: 0 rem;
+  margin: 100px 40px;
+}
+
+.post-middle .post-content .content-group {
+  margin-bottom: 30px;
+}
+
+.post-middle .post-content label {
+  display: block;
+  margin-bottom: 10px;
+  font-family: "Playfair Display" sans-serif;
+  color: #6B728E;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.post-middle .post-content p {
+  color: #404258;
+  font-size: 1rem;
+  font-family: "Noto Sans Korean", sans-serif ;
+}
+
+.post-middle .post-content #displayMsg {
+  width: 500px;
+  height: 350px;
+  border: 2px solid #DDE6ED;
+  padding: 10px 10px;
+}

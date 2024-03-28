@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100..900&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100..900&family=Permanent+Marker&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+/*--------------------------------------start main.css--------------------------------------*/
+main {
+    padding-top:300px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.info-box {
+    width: 1000px; 
+    height: 800px;
+    padding: 20px;
+    border: 5px solid #333; 
+    border-radius: 10px; 
+    text-align: center; 
+    background-color:white;
+    font-weight: bold;
+}
+
+.info-box-top {
+    width: 1000px;
+    height: 350px;
+}
+
+.image {
+    width: 310px;
+    height: 310px;
+    float: left;
+    background-color: white;
+    margin:40px 0 0 30px;
+    border:1px solid gray;
+    border-radius:5px;
+}
+
+.car-item {
+    display: inline-block; /* 인라인 블록 요소로 설정하여 가로로 나열되도록 함 */
+    margin-right: 10px; /* 각 요소 사이의 간격 설정 */
+}
+
+input#image-register {
+    font-size: 15px;
+    position:relative; 
+    /* top:7px; */
+    left: -305px;
+    color: grey;
+    border:1px solid gray;
+    background-color: transparent;
+    cursor: pointer;
+    width: 280px;
+    
+}
+
+Input {
+    position:relative;
+    left:40px;
+    width: 400px; 
+    padding: 10px; 
+    border: 1px solid blueviolet; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    outline: none;
+    text-align: center;
+}
+
+.information label {
+    position: relative;
+    left:40px;
+}
+
+div.information{
+    font-style:oblique;
+    border:none;
+    float:right;
+    width: 480px;
+    height: 350px;
+    text-align: left;
+} 
+
+.custom-select {
+    position:relative;
+    left:40px;
+    text-align: center;
+    width: 400px; 
+    height: 40px;
+    border: 1px solid blueviolet;
+    border-radius: 5px;
+}
+
+select{
+    position:relative;
+    left:40px;
+    width: 420px; 
+    padding: 10px; 
+    border: 1px solid blueviolet; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    outline: none;
+    text-align: center;
+}
+
+input:focus { /* 포커스 시 스타일 */
+    border-color: #007bff; /* 포커스 시 테두리 색상 변경 */
+    box-shadow: 0 0 5px #007bff; /* 포커스 시 그림자 효과 추가 */
+}
+
+#carType{
+    width: 422px; 
+    padding: 10px; 
+    border: 1px solid blueviolet;
+    border-radius: 5px; 
+    font-size: 16px; 
+    outline: none; 
+    text-align: center; 
+    clear:both;
+}
+
+/* .carType {
+    border-color: #007bff;
+    box-shadow: 0 0 5px #007bff; 
+} */
+
+.messagegroup{
+    margin-bottom:0.50rem;
+}
+
+.messagegroup label{ /*label 태그가 인라인 성격이어서 외부 여백을 적용하기 위해 block 으로 변경*/
+    display:block;
+    font-size: 18px;
+    font-style: oblique;
+    font-weight: bold;
+    float: left;
+    position:relative;
+    right:-30px;
+}
+
+.messagegroup input:focus{ /*:form 가상 클래스 선택자로 입력 요소에 커서가 활성화디면 파란색 테두리와 그림자 효과 추가*/ 
+    border:1px solid skyblue;   
+    box-shadow:0 0 40px skyblue; /*글을 작성하려고 박스 클릭하면 테두리에 지정한 색깔 표현된다.*/
+}
+
+.messagegroup textarea{
+    height:280px;
+    width:94%;
+    resize:none;  /*주로 none 값을 줄수 있지만, 해당 값으로 vertical, horizontal 줄수있다. vertical 이 깔끔하고 아래로 내려간다. */
+    border:1px solid gray;
+    border-radius:5px; 
+    font-size: 18px;
+    float:left;
+    position:relative;
+    left:35px;
+    top:10px;
+}
+
+.messagegroup textarea:focus{ /*textarea 요소에 커서 활성화가 되면 파란색 테두리와 그림자 효과 추가*/
+    outline:none;
+    border:1px solid skyblue;
+    box-shadow: 0 0 10px skyblue;  /*글 작성하려고 클릭하면 해당 박스 주위 그람자 생성*/
+}
+
+#add-button {
+    font-family: "Arial", sans-serif;
+    float:right;
+    font-size: 25px;
+    position:relative; 
+    left:-80px; top:30px;
+    color: grey;
+    border:1px solid #ccc;    
+    background-color: transparent;
+    cursor: pointer;
+
+}
+
+.car-item {
+    display: inline-block; /* 인라인 블록 요소로 설정하여 가로로 나열되도록 함 */
+    margin-right: 10px; /* 각 요소 사이의 간격 설정 */
+    
+}
+
+/*--------------------------------------end main.css--------------------------------------*/

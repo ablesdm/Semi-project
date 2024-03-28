@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100..900&family=Permanent+Marker&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100..900&family=Permanent+Marker&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 /* header.css */
 *{
   margin: 0;
@@ -42,6 +43,7 @@ header button.logo{
 header p{
   font-family: Noto Sans Korean Veriable;
 }
+/* end header */
 
 /* main.css */
 .main {
@@ -132,7 +134,7 @@ header p{
   display:block;
 }
 
-.main-bottom .main-inner strong {
+.main-bottom .main-inner strng {
   margin-top: 20px
 }
 
@@ -146,6 +148,7 @@ header p{
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+/* end main */
 
 /* footer.css */
 footer {
@@ -204,3 +207,4 @@ li{
 footer p {
   font-size: 0.8rem;
 }
+/* end footer */

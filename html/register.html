@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="/css/register.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+</head>
+<body>
+
+<!-- header -->
+<header>
+  <div class="container">
+    <!-- logo 클릭하면 메인(첫번째)페이지로 돌아가는 클릭이벤트 필요-->
+    <button class="logo">Car Community</button>
+    <!-- 한줄 소개글 필요 -->
+    <p>차량 관련 모임과 소통이 가능한 커뮤니티 공간</p>
+  </div>
+</header>
+<!-- end header -->
+
+<!-- start main -->
+  <main>
+    <div class="container">
+        <div class="info-box">
+            <div class="info-box-top">
+              <div class="image">
+                <img src="carimage.jpg" alt="자동차" width="290" height="290">
+              </div>
+                <div class="information"><br>
+                
+                    <label for="id">ID</label><br>
+                    <input type="text" id="id" name="id" placeholder="ID 입력하세요."><br><br>
+                    
+
+                    <label for="pw">PW</label><br>
+                    <input type="text" id="pw" name="pw" placeholder="PW 입력하세요."><br><br>
+
+                    <label for="customer_name">Customer name</label><br>
+                    <input type="text" id="customer_name" name="customer_name" placeholder="고객명 입력하세요."><br><br>
+                    
+                    <label for="carType">Car type</label><br>
+                    <select class="custom-select">
+                            <option value="value1">SEDAN</option>
+                            <option value="value2">SUV</option>
+                            <option value="value2">TRUCK</option>
+                            <option value="value2">VAN</option>
+                            <option value="value2">COUPE</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="image-register">
+              <input type="file" id="image-register">
+            </div>
+
+            <div class="info-box-bottom">
+            <div>            
+                <div class="messagegroup">
+                    <label for="msg">Message</label>
+                    <textarea id="msg" placeholder="Message를 입력하세요."></textarea>
+                </div>
+                <div>
+                  <button id="add-button" type="submit">등록</button>
+                  <!-- <a href="/html/read_post.html"><button id="add-button" type="submit">등록</button></a> -->
+                </div>
+            </div>      
+            </div>
+        </div>
+    </div>
+  </main>
+  
+ <!-- footer -->
+ <footer>
+  <div class="container">
+    <div class="social">
+      <a href="#">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+      <a href="#">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="#">
+        <i class="fa-brands fa-twitter"></i>
+      </a>
+      <a href="#">
+        <i class="fa-brands fa-youtube"></i>
+      </a>
+      <a href="#">
+        <i class="fa-brands fa-google-plus"></i>
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li>
+          <button>Home</button>
+        </li>
+        <li>
+          <button>News</button>
+        </li>
+        <li>
+          <button>About</button>
+        </li>
+        <li>
+          <button>Contact Us</button>
+        </li>
+        <li>
+          <button>Our Team</button>
+        </li>
+      </ul>
+    </nav>
+    <p>Copyright ©2024 Designed by CarRevolution</p>
+  </div>
+</footer>
+<!-- end footer -->
+<script src="/js/script.js"></script>
+</body>
+</html>
