@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- React 사용 준비 -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+    <button>구매</button>
+    <button class="하늘">추가</button>
+    <!-- 리액트 사용하는 코드 입력 -->
+    <script type="text/babel">
+                let array={key:0,count:0,todo:[]}
+                localStorage.ak = JSON.stringify(array)
+                console.log(JSON.parse(localStorage.ak))
+
+                const button =document.querySelector('button')
+                const button2 =document.querySelector('.하늘')
+                button.addEventListener('click',function(e) {
+                    let output =JSON.parse(localStorage.ak)
+                    output.count+=1
+                    array.count=output.count
+                    localStorage.ak = JSON.stringify(array)
+                    console.log(JSON.parse(localStorage.ak))
+    
+                })
+
+                button2.addEventListener('click',function(e) {
+                    array['스마트폰']=0
+                    localStorage.ak = JSON.stringify(array)
+                    console.log(JSON.parse(localStorage.ak))
+    
+                })
+
+        class App extends React.Component { 
+            constructor(props){
+                super(props)
+                this.state = {
+                    todo: [{key:0,
+                        count:0,
+                        스마트폰:0}]
+                }
+                this.buttonclick=this.buttonclick.bind(this)
+                }
+
+                
+        save () {
+            localStorage.st = JSON.stringify(this.state) //stringify는 JSON형식으로 보내고 싶을때 사용
+        }
+            
+
+            render () {
+
+
+                return <div>                
+                    <button onClick={this.buttonclick}>추2</button>
+
+                </div>
+            }
+
+
+            buttonclick (event){
+                this.setState({
+                    todo:[...this.state.todo , {
+                        key:0,
+                        count:0,
+                        스마트폰:0
+                    }]
+                })
+                this.save()
+                console.log(JSON.parse(localStorage.st))
+            }
+
+        }
+        const container = document.getElementById('root')
+        ReactDOM.render(<App />, container)
+    </script>
+</body>
+</html>

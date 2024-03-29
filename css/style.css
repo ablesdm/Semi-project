@@ -34,16 +34,17 @@ header button.logo{
   border: transparent;
   padding: 1rem 1rem;
   margin-top: 1rem;
-  color: black;
+  color: #526D82;
   font-size: 64px;
   font-weight: bold;
-  font-family: Permanent Marker; /* 로고폰트 정해야 할 듯*/
+  font-family: 'Permanent Marker'; /* 로고폰트 정해야 할 듯*/
   cursor: pointer;
 }
 header p{
-  font-family: Noto Sans Korean Veriable;
+  font-family: 'Noto Color Emoji';
+  color: #27374D;
 }
-/* end header */
+/* end header.css */
 
 /* main.css */
 .main {
@@ -81,11 +82,17 @@ header p{
   width: 318px;
   height: 28px;
   border:1px solid #ccc;
+  border-radius: 10px 10px;
+  font-size: 12px;
+  color: #27374D;
+  border-color: #ccc;
 }
 
 .main-middle .search-icon {
   background-color: transparent;
-  border:1px solid #ccc;
+  border:1px solid transparent;
+  border-radius: 50px 50px;
+  color: #27374D;
   font-size: 19px;
   cursor: pointer;
 }
@@ -93,9 +100,11 @@ header p{
 .main-middle .registration-form button {
   width: 50px;
   height: 28px;
-  color: grey;
+  color: #27374D;
   background-color: transparent;
   border:1px solid #ccc;
+  border-color: #ccc;
+  font-size: 12px;
   cursor: pointer;
 }
 
@@ -107,14 +116,14 @@ header p{
 
 .main-bottom .main-inner {
   width: 30%;
-  height: 350px;
+  height: 370px;
   margin-right: 5%;
   padding:1rem 1rem 1.5rem 1rem;
   float:left;
-  background-color:#f8f8f8;
+  background-color: transparent;
   border:1px solid #ccc;
-  margin-bottom:3rem;
-  margin-top: 30px;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 .main-bottom .main-inner:nth-child(3n) {
@@ -126,6 +135,8 @@ header p{
   align-items: center;
   justify-content: center;
   height: 250px;
+  margin-top: 5px;
+  margin-bottom: 20px;
 }
 
 /* 이미지 크기가 부모 요소를 넘지 않도록 100%로 지정 */
@@ -134,12 +145,18 @@ header p{
   display:block;
 }
 
-.main-bottom .main-inner strng {
-  margin-top: 20px
+.main-bottom .main-inner strong {
+  margin-top: 20px;
+  display: block;
+  color: #526D82;
+  font-family: 'Noto Sans Korean' sans-serif;
 }
 
 .main-bottom .main-inner h3 {
-  margin-top: 10px
+  margin-top: 10px;
+  font-family: 'Noto Sans Korean' sans-serif;
+  color: #27374D;
+  font-size: 14px;
 }
 
 .main-bottom .main-inner strong,
@@ -148,7 +165,7 @@ header p{
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-/* end main */
+/* end main.css */
 
 /* footer.css */
 footer {
@@ -196,7 +213,7 @@ footer button{
   color: white;
   border: 0;
   cursor: pointer;
-  font-family: Playfair Display;
+  font-family: 'Playfair Display';
   font-size: 1rem;
 }
 
